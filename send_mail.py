@@ -11,17 +11,15 @@ import arrow
 
 my_sender = 'xxxxxx@qq.com'  # 发件人邮箱账号
 my_pass = "xxxxxxx"  # 口令
-my_user = ['xxxxxx@qq.com']  # 收件人邮箱账号
 
 
 def mail(u, datas):
     ret = True
-    # for u in my_user:
     try:
         mes_str = datas
         msg = MIMEText(mes_str, _subtype="html", _charset='utf-8')
-        msg['From'] = formataddr(["Vision", my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
-        msg['To'] = formataddr(["Vision", u])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+        msg['From'] = formataddr(["666", my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+        msg['To'] = formataddr(["666", u])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
         msg['Subject'] = "租房推送"  # 邮件的主题，也可以说是标题
 
         server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是25
