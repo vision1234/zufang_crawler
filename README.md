@@ -2,6 +2,13 @@
 
 ## 步骤：
 
+### 0、使用浏览器进入某家和某爱某家的网站，设置好筛选条件，复制url替换对应.py上的url
+
+```
+https://bj.5i5j.com/zufang/subway/ss2159/b4000e7300h110l70r2r3t1u1/ 
+https://bj.lianjia.com/ditiezufang/li656s43137676/rt200600000001l1l2ra2ra3ra4brp4000erp7300/
+```
+
 ### 1、修改send_mail.py发件人邮箱和授权码，授权码可以从邮箱运营商网站获取
 
 ```python
