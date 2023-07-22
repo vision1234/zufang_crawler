@@ -37,3 +37,9 @@ pip install -r requirements.txt
 ```python
 python mian.py
 ```
+
+### 6、可以在crontab 中添加定时任务，每天定时跑一遍
+
+```
+0 18 * * * cd /home/user_name/workspace/zufang_crawler;python mian.py;
+```
