@@ -33,11 +33,13 @@ send_mail.mail("xxxxxx@qq.com", mail_data)
 
 
 
-### 4、在命令行安装python库
+### 4、在命令行安装python库（python3.8）
 
 ```shell
 pip install -r requirements.txt
 ```
+
+低版本的话，需要依次手动安装arrow、lxml、requests这三个库
 
 ### 5、运行main.py
 
