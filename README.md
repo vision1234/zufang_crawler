@@ -38,7 +38,7 @@ my_pass = "xxxxxxx"  # 口令
 
 
 
-### 2、昵称改不改都可以
+### 4.昵称改不改都可以
 
 ```python
 msg['From'] = formataddr(["666", my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
@@ -47,7 +47,7 @@ msg['To'] = formataddr(["666", u])  # 括号里的对应收件人邮箱昵称、
 
 
 
-### 3、修改main.py的收件人邮箱
+### 5.修改main.py的收件人邮箱
 
 ```python
 send_mail.mail("xxxxxx@qq.com", mail_data)
@@ -55,7 +55,7 @@ send_mail.mail("xxxxxx@qq.com", mail_data)
 
 ![mail_sc.png](https://github.com/vision1234/images/blob/master/blog_img/main_sc.png)
 
-### 4、在命令行安装python库（python3.8）
+### 6.在命令行安装python库（python3.8）
 
 ```shell
 pip install -r requirements.txt
@@ -63,13 +63,13 @@ pip install -r requirements.txt
 
 低版本的话，需要依次手动安装arrow、lxml、requests这三个库
 
-### 5、运行main.py
+### 7.运行main.py
 
 ```python
 python mian.py
 ```
 
-### 6、可以在crontab 中添加定时任务，每天定时跑一遍
+### 8.可以在crontab 中添加定时任务，每天定时跑一遍
 
 ```
 0 18 * * * cd /home/user_name/workspace/zufang_crawler;python mian.py;
