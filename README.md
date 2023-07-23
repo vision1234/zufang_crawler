@@ -34,7 +34,7 @@ my_sender = 'xxxxxx@qq.com'  # 发件人邮箱账号
 my_pass = "xxxxxxx"  # 口令
 ```
 
-![mail_sc.png](https://github.com/vision1234/images/blob/master/blog_img/main_sc.pngmail_sc.png)
+![mail_sc.png](https://github.com/vision1234/images/blob/master/blog_img/mail_sc.png)
 
 
 
