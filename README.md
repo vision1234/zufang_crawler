@@ -10,19 +10,33 @@
 
 ## 步骤：
 
-### 0、使用浏览器进入某家和某爱某家的网站，设置好筛选条件，复制url替换对应.py上的url
+### 1.下载代码到本地
+
+```
+git pull https://github.com/vision1234/zufang_crawler.git
+```
+
+
+
+### 2.使用浏览器进入某家和某爱某家的网站，设置好筛选条件，复制url替换对应.py上的url
 
 ```
 https://bj.5i5j.com/zufang/subway/ss2159/b4000e7300h110l70r2r3t1u1/ 
 https://bj.lianjia.com/ditiezufang/li656s43137676/rt200600000001l1l2ra2ra3ra4brp4000erp7300/
 ```
 
-### 1、修改send_mail.py发件人邮箱和授权码，授权码可以从邮箱运营商网站获取
+
+
+### 3.修改send_mail.py发件人邮箱和授权码，授权码可以从邮箱运营商网站获取
 
 ```python
 my_sender = 'xxxxxx@qq.com'  # 发件人邮箱账号
 my_pass = "xxxxxxx"  # 口令
 ```
+
+![mail_sc.png](https://github.com/vision1234/images/blob/master/blog_img/main_sc.pngmail_sc.png)
+
+
 
 ### 2、昵称改不改都可以
 
@@ -39,7 +53,7 @@ msg['To'] = formataddr(["666", u])  # 括号里的对应收件人邮箱昵称、
 send_mail.mail("xxxxxx@qq.com", mail_data)
 ```
 
-
+![mail_sc.png](https://github.com/vision1234/images/blob/master/blog_img/main_sc.png)
 
 ### 4、在命令行安装python库（python3.8）
 
